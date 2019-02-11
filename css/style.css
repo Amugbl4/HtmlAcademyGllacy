@@ -185,6 +185,7 @@ body {
     flex: 0 1 50%;
     width: 50%;
     min-height: 230;
+    margin-right: 25px;
 }
 
 .info-cards__right {
