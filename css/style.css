@@ -8,6 +8,7 @@ html {
 
 body {
     background-color: rgb(132, 157, 143);
+    font-family: "Roboto", sans-serif
 }
 /* .clearfix {
     content: "";
@@ -43,6 +44,7 @@ body {
     display: inline-block;
     list-style: none;
     text-decoration: none;
+    padding: 20px 0;
     margin-right: 30px;
     color: #fff;
     font-size: 16px;
@@ -62,14 +64,110 @@ body {
     width: 265px;
 }
 
+.user-block ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.user-block li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    margin-right: 10px;
+    
+}
+
+.user-block li:last-child a {
+    margin-right: 0px;
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.search span {
+    color: transparent;
+}
+
+.search::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 16px;
+    width: 17px;
+    height: 17px;
+    background: transparent url("/img/Лупа.png") no-repeat;
+}
+
+.login {
+    position: relative;
+    display: inline-block;
+    /* max-width: 93px; */
+    padding: 20px 17px;
+    padding-left: 44px;
+}
+
+.login::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 16px;
+    width: 21px;
+    height: 19px;
+    background: transparent url("/img/login.png") no-repeat;
+}
+
+.bag {
+    position: relative;
+    display: inline-block;
+    padding: 20px 34px;
+    padding-left: 45px; 
+}
+
+.bag::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 16px;
+    width: 21px;
+    height: 20px;
+    background: transparent url("/img/bag.png") no-repeat;
+}
+
 .work-info {
     margin-left: auto;
     width: 175px;
+    padding: 0;
+}
+
+.work-info__time {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.work-info__tel {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 24px;
+    color: #fff;
+    text-align: right; 
 }
 
 .intro-slider {
     width: 700px;
     height: 600px;
+    margin-top: -40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -20px;
@@ -77,6 +175,9 @@ body {
 
 .info-cards {
     display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
     margin-bottom: 40px;
 }
 
@@ -90,6 +191,35 @@ body {
     flex: 0 1 50%;
     width: 50%;
     min-height: 230;
+}
+
+.info-card {
+    padding: 20px 20px;
+}
+
+.info-card__title {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 41px;
+    color: #fff;
+    padding-bottom: 15px; 
+}
+
+.info-card p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    padding-bottom: 40px; 
+}
+
+.info-cards__left .info-card {
+    background: url("/img/Малиновый\ фон.jpg") no-repeat;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.info-cards__right .info-card {
+    background: url("/img/Шоколадный\ фон.jpg") no-repeat;
+    border-radius: 25px 25px 25px 25px;
 }
 
 .item-catalog {
