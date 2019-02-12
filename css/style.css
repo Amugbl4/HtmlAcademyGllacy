@@ -177,7 +177,7 @@ body {
     margin-top: -40px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -20px;
+    margin-bottom: -40px;
 }
 
 .intro-slider__title {
@@ -277,6 +277,10 @@ body {
     height: auto;
 }
 
+.item__img img {
+    border-radius: 140px;
+}
+
 .item__label{
     position: absolute;
     top: 0;
@@ -291,14 +295,22 @@ body {
     color: #fff;
 }
 
+.item__price span {
+    font-size: 27px;
+    font-weight: bold;
+}
+
 .info-advantages {
     margin-bottom: 40px;
 }
 
 .info-advantages__list {
     display: flex;
-    flex: 1 0 50%;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
+}
+
+.advantage-item {
+    flex: 0 0 50%;
 }
 
 .card-blog {
