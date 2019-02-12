@@ -44,11 +44,17 @@ body {
     display: inline-block;
     list-style: none;
     text-decoration: none;
-    padding: 20px 0;
-    margin-right: 30px;
+    padding: 20px 10px;
+    margin-right: 10px;
     color: #fff;
     font-size: 16px;
     line-height: 20px;
+}
+
+.main-navigation li a:hover {
+    color: #000;
+    background-color: rgb(76, 163, 114);
+    border-radius: 75px;
 }
 
 .main-navigation li:last-child a {
@@ -89,15 +95,13 @@ body {
 .search {
     position: relative;
     display: inline-block;
+    font-size: 0 !important; 
     padding: 20px 0;
-}
-
-.search span {
-    color: transparent;
+    height: 60px;
 }
 
 .search::before {
-    position: absolute;
+    display: block;
     content: "";
     top: 17px;
     left: 16px;
@@ -112,13 +116,14 @@ body {
     /* max-width: 93px; */
     padding: 20px 17px;
     padding-left: 44px;
+    height: 60px;
 }
 
 .login::before {
     position: absolute;
     content: "";
-    top: 16px;
-    left: 16px;
+    top: 18px;
+    left: 17px;
     width: 21px;
     height: 19px;
     background: transparent url("/img/login.png") no-repeat;
@@ -129,13 +134,14 @@ body {
     display: inline-block;
     padding: 20px 34px;
     padding-left: 45px; 
+    height: 60px;
 }
 
 .bag::before {
     position: absolute;
     content: "";
-    top: 16px;
-    left: 16px;
+    top: 17px;
+    left: 17px;
     width: 21px;
     height: 20px;
     background: transparent url("/img/bag.png") no-repeat;
@@ -145,6 +151,7 @@ body {
     margin-left: auto;
     width: 175px;
     padding: 0;
+    text-align: right;
 }
 
 .work-info__time {
@@ -171,6 +178,34 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -20px;
+}
+
+.intro-slider__title {
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+    color: #fff;
+}
+
+
+.slide__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img__left {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: -1;
+}
+
+.img__right {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: -2;
 }
 
 .info-cards {
@@ -237,14 +272,42 @@ body {
 }
 
 .item__img {
+    position: relative;
     width: 100%;
     height: auto;
+}
+
+.item__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item__price {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 45px;
+    color: #fff;
 }
 
 .info-advantages {
     margin-bottom: 40px;
 }
 
+.info-advantages__list {
+    display: flex;
+    flex: 1 0 50%;
+    flex-wrap: no-wrap;
+}
+
+.card-blog {
+    padding: 20px 30px;
+}
+
+.info-cards__left .card-blog {
+    background: url("/img/")
+}
 .main-footer .container {
     display: flex;
     justify-content: space-between;
