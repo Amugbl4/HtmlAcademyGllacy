@@ -289,13 +289,13 @@ body {
 .info-cards__left .info-card {
     background: url("/img/Малиновый\ фон.jpg") no-repeat;
     background-size: cover;
-    border-radius: 35px;
+    border-radius: 15px;
 }
 
 .info-cards__right .info-card {
     background: url("/img/Шоколадный\ фон.jpg") no-repeat;
     background-size: cover;
-    border-radius: 35px;
+    border-radius: 15px;
 }
 
 .item-catalog {
@@ -390,7 +390,7 @@ body {
 .card-blog {
     background: url("/img/Малиновый\ фон.jpg") no-repeat;
     background-size: cover;
-    border-radius: 35px;
+    border-radius: 15px;
 }
 
 .card-blog__title {
@@ -409,32 +409,40 @@ body {
     font-weight: bold;
     color: #fff;
     padding-right: 256px;
-    padding-bottom: 80px;
+    padding-bottom: 65px;
+}
+
+.card-subscription__pattern {
+    background-color: #ff0000;
+    padding: 8px;
+    border-radius: 15px;
 }
 
 .card-subscription {
-    padding: 5px;
+    padding: 30px 20px;
+    background-color: #f8f7f4;
 }
 
 .card-subscription__title {
     margin: 0;
-    padding: 0 27px;
-    padding-top: 28px;
+    padding: 0;
     padding-bottom: 34px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .subscription {
     display: flex;
 }
 
-.subscription__input {
-    padding: 0 11px 35px 20px;
-}
-
-.subscription__input input {
+.subscription input {
     width: 368px;
     height: 44px;
     padding: 15px;
+}
+
+.subscription .btn {
+    margin-left: auto;
 }
 
 .map {
