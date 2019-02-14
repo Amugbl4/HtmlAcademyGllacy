@@ -19,6 +19,11 @@ body {
     clear: both;
 } */
 
+button {
+    padding: 0 20px !important;
+    border: none;
+    vertical-align: middle;
+}
 .btn {
     display: inline-flex;
     font-size: 18px;
