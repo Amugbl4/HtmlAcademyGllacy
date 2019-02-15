@@ -202,6 +202,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -245px;
+    z-index: -1;
 }
 
 .intro-slider__slide {
@@ -213,7 +214,6 @@ body {
     position: absolute;
     top: 0;
     left: 50px;
-    z-index: -1;
 }
 
 /* .img__left {
