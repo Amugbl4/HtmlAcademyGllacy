@@ -20,14 +20,14 @@ body {
 } */
 
 button {
-    padding: 0 20px !important;
+    padding: 0 20px;
     border: none;
     vertical-align: middle;
 }
 .btn {
     display: inline-flex;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 17px;
     text-decoration: none;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ button {
 .container {
     width: 1250px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
 .main-header .container {
@@ -109,30 +109,41 @@ button {
     font-size: 0;
 }
 
+.user-block li {
+
+}
+
 .user-block li a {
     display: inline-block;
     text-decoration: none;
     font-size: 14px;
     line-height: 16px;
+    padding: 8px 17px;
+    padding-left: 45px;
+    margin: 0;
     color: #fff;
     margin-right: 10px;
+}
 
+.user-block li a:hover {
+    color: #000;
+    background-color: #f7f6f3;
+    border-radius: 15px;
 }
 
 .user-block li:last-child a {
     margin-right: 0px;
 }
 
-.search {
+.user-block li .search {
     position: relative;
     display: inline-block;
-    font-size: 0 !important;
-    padding: 8px 0;
-    height: 60px;
+    padding: 7px;
+    padding-bottom: 4px;
 }
 
 .search::before {
-    display: block;
+    display: inline-block;
     content: "";
     top: 7px;
     left: 16px;
@@ -144,10 +155,6 @@ button {
 .login {
     position: relative;
     display: inline-block;
-    /* max-width: 93px; */
-    padding: 8px 17px;
-    padding-left: 44px;
-    height: 60px;
 }
 
 .login::before {
@@ -163,9 +170,6 @@ button {
 .bag {
     position: relative;
     display: inline-block;
-    padding: 8px 34px;
-    padding-left: 45px;
-    height: 60px;
 }
 
 .bag::before {
@@ -413,7 +417,7 @@ button {
     line-height: 30px;
     font-weight: bold;
     color: #fff;
-    padding-right: 256px;
+    padding-right: 200px;
     padding-bottom: 65px;
 }
 
@@ -465,8 +469,32 @@ button {
     padding: 30px 25px;
 }
 
+.main-footer {
+    min-height: 140px;
+}
+
 .main-footer .container {
     display: flex;
     justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+    margin-top: 32px;
+}
+
+.footer-info__list {
+    display: flex;
+    margin-top: 32px;
+}
+
+.footer-info__list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.footer-copyright__logo {
+    margin-top: 20px;
 }
 
