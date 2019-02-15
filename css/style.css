@@ -24,6 +24,7 @@ button {
     border: none;
     vertical-align: middle;
 }
+
 .btn {
     display: inline-flex;
     font-size: 18px;
@@ -39,7 +40,7 @@ button {
     box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
     background-image: linear-gradient(to top, #e74a35, #f26843);
     border-radius: 75px;
-     
+
 }
 
 .container {
@@ -243,7 +244,7 @@ button {
     line-height: 60px;
     color: #fff;
     padding-left: 200px;
-    padding-right: 200px; 
+    padding-right: 200px;
     padding-top: 395px;
 }
 
@@ -479,6 +480,10 @@ button {
     margin-top: 32px;
 }
 
+.footer-social .social-btn {
+    margin-right: 17px;
+}
+
 .footer-info__list {
     display: flex;
     margin-top: 32px;
@@ -487,10 +492,43 @@ button {
 .footer-info__list ul {
     margin: 0;
     padding: 0;
-    list-style: none; 
+    list-style: none;
+}
+
+.footer-info__list li {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.footer-info__list li a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.footer-info__list .info-list__left {
+    position: relative;
+    margin-right: 32px;
+}
+
+
+.info-list__left .footer__heart {
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    width: 15px;
+    height: 13px;
 }
 
 .footer-copyright__logo {
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 
+.footer-copyright__text {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #fff;
+}
