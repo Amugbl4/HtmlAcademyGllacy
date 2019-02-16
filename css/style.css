@@ -29,18 +29,35 @@ button {
     display: inline-flex;
     font-size: 18px;
     line-height: 17px;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
     text-decoration: none;
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
     text-align: center;
-    height: 45px;
+    min-height: 45px;
     padding: 14px 24px;
     color: #fff;
     box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-    background-image: linear-gradient(to top, #e74a35, #f26843);
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     border-radius: 75px;
+}
+  
+.btn:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%); 
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
 
+.btn--large {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+    min-height: 64px;
+    padding: 12px 42px;
 }
 
 .container {
@@ -149,6 +166,10 @@ button {
     background: transparent url("/img/Лупа.png") no-repeat;
 }
 
+.search:hover::before {
+    filter: invert(1);
+}
+
 .login {
     position: relative;
     display: inline-block;
@@ -164,6 +185,10 @@ button {
     background: transparent url("/img/login.png") no-repeat;
 }
 
+.login:hover::before {
+    filter: invert(1);
+}
+
 .bag {
     position: relative;
     display: inline-block;
@@ -177,6 +202,10 @@ button {
     width: 21px;
     height: 20px;
     background: transparent url("/img/bag.png") no-repeat;
+}
+
+.bag:hover::before {
+    filter: invert(1);
 }
 
 .work-info {
@@ -211,7 +240,6 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -245px;
-    z-index: -1;
 }
 
 .intro-slider__slide {
@@ -223,6 +251,7 @@ button {
     position: absolute;
     top: 0;
     left: 50px;
+    z-index: -1;
 }
 
 /* .img__left {
@@ -246,6 +275,7 @@ button {
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 395px;
+    margin-bottom: 26px;
 }
 
 .info-cards {
@@ -339,6 +369,10 @@ button {
     bottom: 15px;
     left: 0;
     font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.9px 3px 
+    rgba(49, 50, 53, 0.5);
     color: #fff;
 }
 
@@ -357,6 +391,10 @@ button {
 
 .info-advantages {
     margin-bottom: 40px;
+    background: url('/img/woff_patten.jpg');
+    border-radius: 15px;
+    padding: 28px 20px;
+    padding-bottom: 0;
 }
 
 .info-advantages__list {
@@ -394,7 +432,7 @@ button {
 }
 
 .card-blog {
-    background: url("/img/Малиновый\ фон.jpg") no-repeat;
+    background: url("/img/strawberry\ background.jpg") no-repeat;
     background-size: cover;
     border-radius: 15px;
 }
@@ -405,7 +443,7 @@ button {
     padding-bottom: 8px;
     font-size: 16px;
     line-height: 22px;
-    color: #fff;
+    color: #000;
 }
 
 .card-blog__link {
@@ -413,13 +451,13 @@ button {
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     padding-right: 200px;
     padding-bottom: 65px;
 }
 
 .card-subscription__pattern {
-    background-color: #ff0000;
+    background: #f8f7f4 url('/img/post_pattern.png');
     padding: 8px;
     border-radius: 15px;
 }
@@ -445,6 +483,7 @@ button {
     width: 368px;
     height: 44px;
     padding: 15px;
+    margin-right: 11px;
 }
 
 .subscription .btn {
@@ -455,6 +494,7 @@ button {
     position: relative;
     width: 100%;
     height: 430px;
+    background: url('/img/map.jpg');
 }
 
 .map-info {
@@ -478,10 +518,15 @@ button {
 .footer-social {
     display: flex;
     margin-top: 32px;
+    margin-left: 54px;
 }
 
 .footer-social .social-btn {
     margin-right: 17px;
+}
+
+.footer-social .social-btn:last-child {
+    margin-right: 0;
 }
 
 .footer-info__list {
@@ -513,9 +558,9 @@ button {
 }
 
 
-.info-list__left .footer__heart {
+.info-list__left .footer-info__img {
     position: absolute;
-    top: 2px;
+    top: 5px;
     left: -20px;
     width: 15px;
     height: 13px;
