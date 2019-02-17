@@ -13,6 +13,10 @@ body {
     font-family: "Roboto", sans-serif
 }
 
+body input[type="radio"] {
+    display: none;
+}
+
 /* .clearfix {
     content: "";
     display: table;
@@ -254,6 +258,7 @@ button {
 .intro-slider__slide {
     position: relative;
     text-align: center;
+    display: none;
 }
 
 .slide__img {
@@ -261,6 +266,7 @@ button {
     top: 0;
     left: 50px;
     z-index: -1;
+    transition: 0.5s ease;
 }
 
 /* .img__left {
@@ -302,6 +308,18 @@ button {
 .intro-slider__pagination {
     position: absolute;
     bottom: 350px;
+}
+
+#btn-1:checked ~ .container #slide1,
+#btn-2:checked ~ .container #slide2,
+#btn-3:checked ~ .container #slide3 {
+    display: block;
+}
+
+#btn-1:checked ~ .container label[for="btn-1"],
+#btn-2:checked ~ .container label[for="btn-2"],
+#btn-3:checked ~ .container label[for="btn-3"] {
+    background-color: #fff;
 }
 
 .info-cards {
