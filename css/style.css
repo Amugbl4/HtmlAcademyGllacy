@@ -39,17 +39,26 @@ button {
     padding: 14px 24px;
     color: #fff;
     box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    border-radius: 75px;
+    background: #f26843;
+    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    cursor: pointer;
 }
   
 .btn:hover {
-    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%); 
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+    background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%); 
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+    background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%); 
+    box-shadow: inset 0px 2px 2px 0px rgba(172, 16, 0, 1);
 }
 
 .btn--large {
@@ -272,10 +281,27 @@ button {
     font-size: 60px;
     line-height: 60px;
     color: #fff;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 220px;
+    padding-right: 220px;
     padding-top: 395px;
     margin-bottom: 26px;
+}
+
+.pagination__button {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    vertical-align: top;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.intro-slider__pagination {
+    position: absolute;
+    bottom: 350px;
 }
 
 .info-cards {
@@ -506,11 +532,29 @@ button {
     padding: 30px 25px;
 }
 
+.map-info__adress {
+    margin: 0;
+    padding: 0;
+    color: #323232;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.map-info__tel {
+    margin: 0;
+    padding: 0;
+    color: #323232;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
 .main-footer {
     min-height: 140px;
 }
 
-.main-footer .container {
+.main-footer .container {    
     display: flex;
     justify-content: space-between;
 }
@@ -575,5 +619,9 @@ button {
     margin: 0;
     padding: 0;
     font-size: 13px;
+    color: #fff;
+}
+
+.footer-copyright__text a {
     color: #fff;
 }
