@@ -1,0 +1,20 @@
+{
+  "name": "htmlacademygllacy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amugbl4/HtmlAcademyGllacy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amugbl4/HtmlAcademyGllacy/issues"
+  },
+  "homepage": "https://github.com/Amugbl4/HtmlAcademyGllacy#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

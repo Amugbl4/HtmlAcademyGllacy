@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    background-color: rgb(132, 157, 143);
-    font-family: "Roboto", sans-serif
+    font-family: "Roboto", sans-serif;
+    background-color:  rgb(132, 157, 143);
 }
 
 body input[type="radio"] {
@@ -113,7 +113,7 @@ button {
 .main-navigation li a:hover {
     color: #000;
     background-color: #f7f6f3;
-    border-radius: 15px;
+    border-radius: 35px;
 }
 
 .main-navigation li:last-child a {
@@ -293,7 +293,7 @@ button {
     margin-bottom: 26px;
 }
 
-.pagination__button {
+/* .pagination__button {
     display: inline-block;
     width: 17px;
     height: 17px;
@@ -307,8 +307,8 @@ button {
 
 .intro-slider__pagination {
     position: absolute;
-    bottom: 350px;
-}
+    bottom: 55%;
+} */
 
 #btn-1:checked ~ .container #slide1,
 #btn-2:checked ~ .container #slide2,
@@ -550,9 +550,16 @@ button {
     padding: 30px 25px;
 }
 
+.map-info__text {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+}
+
 .map-info__adress {
     margin: 0;
     padding: 0;
+    padding-bottom: 16px;
     color: #323232;
     font-size: 18px;
     line-height: 24px;
@@ -629,6 +636,9 @@ button {
 }
 
 .footer-copyright__logo {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
     margin-top: 20px;
     margin-bottom: 5px;
 }
