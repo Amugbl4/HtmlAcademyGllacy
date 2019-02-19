@@ -13,9 +13,9 @@ body {
     background-color:  rgb(132, 157, 143);
 }
 
-body input[type="radio"] {
+/* body input[type="radio"] {
     display: none;
-}
+} */
 
 /* .clearfix {
     content: "";
@@ -249,7 +249,7 @@ button {
 .intro-slider {
     width: 1145px;
     height: 881px;
-    margin-top: -185px;
+    margin-top: -140px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -245px;
@@ -258,7 +258,7 @@ button {
 .intro-slider__slide {
     position: relative;
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .slide__img {
@@ -266,7 +266,11 @@ button {
     top: 0;
     left: 50px;
     z-index: -1;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
+}
+
+.slick-list {
+    overflow: visible;
 }
 
 /* .img__left {
@@ -287,16 +291,32 @@ button {
     font-size: 60px;
     line-height: 60px;
     color: #fff;
-    padding-left: 220px;
-    padding-right: 220px;
+    max-width: 700px;
     padding-top: 395px;
+    margin: 0 auto;
     margin-bottom: 26px;
 }
 
-/* .pagination__button {
-    display: inline-block;
-    width: 17px;
-    height: 17px;
+
+.slick-dots {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: -40px;
+}
+
+.slick-dots ul {
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots li button{
+    width: 21px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
     margin-right: 8px;
     vertical-align: top;
     background-color: transparent;
@@ -305,12 +325,19 @@ button {
     cursor: pointer;
 }
 
-.intro-slider__pagination {
-    position: absolute;
-    bottom: 55%;
-} */
+.slick-dots .slick-active button {
+    background-color: rgba(255, 255, 255);
+}
 
-#btn-1:checked ~ .container #slide1,
+.slick-dots button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slick-dots button:active {
+    background-color: rgba(255, 255, 255);
+}
+
+/* #btn-1:checked ~ .container #slide1,
 #btn-2:checked ~ .container #slide2,
 #btn-3:checked ~ .container #slide3 {
     display: block;
@@ -320,7 +347,7 @@ button {
 #btn-2:checked ~ .container label[for="btn-2"],
 #btn-3:checked ~ .container label[for="btn-3"] {
     background-color: #fff;
-}
+} */
 
 .info-cards {
     display: flex;
@@ -332,12 +359,14 @@ button {
     width: 50%;
     min-height: 230;
     margin-right: 25px;
+    z-index: 2;
 }
 
 .info-cards__right {
     flex: 0 1 50%;
     width: 50%;
     min-height: 230;
+    z-index: 2;
 }
 
 .info-card {
@@ -496,13 +525,13 @@ button {
     line-height: 30px;
     font-weight: bold;
     color: #000;
-    padding-right: 200px;
-    padding-bottom: 65px;
+    max-width: 300px;
+    margin-bottom: 65px;
 }
 
 .card-subscription__pattern {
     background: #f8f7f4 url('/img/post_pattern.png');
-    padding: 8px;
+    padding: 10px 8px;
     border-radius: 15px;
 }
 
