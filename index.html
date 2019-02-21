@@ -27,12 +27,22 @@
             </nav>
             <div class="user-block">
                 <ul class="user-block__list">
-                    <li><a class="search" href="#" title="Поиск">
-                            <!-- <div class="modal-search">
-                                <input type="text" placeholder="Что ищем?">
-                            </div> -->
-                        </a></li>
+                    <li><a class="search" href="#" title="Поиск"></a></li>
+                    <div class="modal modal-search">
+                        <input type="text" placeholder="Что ищем?">
+                    </div>
                     <li><a class="login" href="#">Вход</a></li>
+                    <div class="modal modal-login">
+                        <form action="#" method="POST">
+                            <input type="email" name="email" placeholder="Электронная почта">
+                            <input type="password" name="password" placeholder="Пароль">
+                            <button class="btn">Войти</button>
+                        </form>
+                        <div class="login-ilnk">
+                            <a href="#" class="login-link__recovery">Забыли пароль?</a>
+                            <a href="#" class="login-link__reg">Новая регистрация</a>
+                        </div>
+                    </div>
                     <li><a class="bag" href="#" title="Корзина">Пусто</a></li>
                 </ul>
             </div>
@@ -260,11 +270,6 @@
             </div>
         </div>
     </footer>
-    <div class="container">
-        <div class="modal-search">
-            <input type="text" placeholder="Что ищем?">
-        </div>
-    </div>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>

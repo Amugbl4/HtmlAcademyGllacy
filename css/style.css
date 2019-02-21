@@ -123,6 +123,7 @@ button {
 }
 
 .user-block ul {
+    position: relative;
     display: flex;
     list-style: none;
     margin: 0;
@@ -169,53 +170,39 @@ button {
     background: transparent url("/img/Лупа.png") no-repeat;
 }
 
-/* .user-block li .search:hover .modal-search {    
-    display: block;
-}
-
-.user-block .modal-search:hover {
-    display: block;
-} */
-
-.modal-search {
+.modal {
     display: none;
     position: absolute;
-    background-color: #f8f7f4;
-    width: 340px;
-    height: 85px;
-    top: 65px;
-    left: 50%;
     padding: 20px 15px;
-    border-radius: 5px;
+    background-color: #f8f7f4;
     box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
     z-index: 20;
+    border-radius: 5px;
 }
 
-/* .modal-search {
-    display: none;
-    position: absolute;
-    background-color: #f8f7f4;
-    width: 340px;
-    height: 85px;
-    top: 5px;
-    left: -310px;
-    padding: 20px 15px;
-    margin-top: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-    z-index: 20;
-} */
-
-.modal-search--show {
-    display: block;
-} 
- 
-.modal-search input {
+.modal input {
     margin: 0;
     padding: 15px;
-    width: 310px;
     border: 1px solid #d3d3d2;
     border-radius: 5px;
+}
+
+.modal--show {
+    display: block;
+} 
+
+.modal-search {    
+    width: 340px;
+    height: 85px;
+    top: 35px;
+    right: 50%;
+    margin-right: 100px;
+    padding: 20px 15px;
+}
+
+ 
+.modal-search input {
+    width: 310px;
 }
 
 .search:hover::before {
@@ -235,6 +222,51 @@ button {
     width: 21px;
     height: 19px;
     background: transparent url("/img/login.png") no-repeat;
+}
+
+.modal-login {
+    position: absolute;
+    display: none;
+    width: 280px;
+    height: 220px;
+    top: 35px;
+    right: 50%;
+    margin-right: -5px;
+}
+
+.modal-login input {
+    width: 240px;
+    margin-bottom: 20px;    
+}
+
+.modal-login .login-link {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+}
+
+.modal-login .login-link__recovery {
+    display: inline-block;
+    position: absolute;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    color: #323232;
+    top: 155px;
+    left: 50%;   
+}
+
+.modal-login .login-link__reg {
+    display: inline-block;
+    position: absolute;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    color: #323232;
+    top: 175px;
+    left: 50%;   
 }
 
 .login:hover::before {
@@ -265,7 +297,7 @@ button {
     width: 175px;
     padding: 0;
     text-align: right;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .work-info__time {
