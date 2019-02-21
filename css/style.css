@@ -13,16 +13,6 @@ body {
     background-color:  rgb(132, 157, 143);
 }
 
-/* body input[type="radio"] {
-    display: none;
-} */
-
-/* .clearfix {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
 button {
     padding: 0 20px;
     border: none;
@@ -113,7 +103,7 @@ button {
 .main-navigation li a:hover {
     color: #000;
     background-color: #f7f6f3;
-    border-radius: 35px;
+    border-radius: 15px;
 }
 
 .main-navigation li:last-child a {
@@ -177,6 +167,55 @@ button {
     width: 17px;
     height: 17px;
     background: transparent url("/img/Лупа.png") no-repeat;
+}
+
+/* .user-block li .search:hover .modal-search {    
+    display: block;
+}
+
+.user-block .modal-search:hover {
+    display: block;
+} */
+
+.modal-search {
+    display: none;
+    position: absolute;
+    background-color: #f8f7f4;
+    width: 340px;
+    height: 85px;
+    top: 65px;
+    left: 50%;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    z-index: 20;
+}
+
+/* .modal-search {
+    display: none;
+    position: absolute;
+    background-color: #f8f7f4;
+    width: 340px;
+    height: 85px;
+    top: 5px;
+    left: -310px;
+    padding: 20px 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    z-index: 20;
+} */
+
+.modal-search--show {
+    display: block;
+} 
+ 
+.modal-search input {
+    margin: 0;
+    padding: 15px;
+    width: 310px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
 }
 
 .search:hover::before {
@@ -247,8 +286,6 @@ button {
 }
 
 .intro-slider {
-    width: 1145px;
-    height: 881px;
     margin-top: -140px;
     margin-left: auto;
     margin-right: auto;
@@ -258,51 +295,45 @@ button {
 .intro-slider__slide {
     position: relative;
     text-align: center;
-    /* display: none; */
+    height: 900px;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.slick-slide img:focus {
+    border: none;
+    outline: none;
 }
 
 .slide__img {
-    position: absolute;
-    top: 0;
-    left: 50px;
-    z-index: -1;
-    /* transition: 0.5s ease; */
-}
-
-.slick-list {
-    overflow: visible;
-}
-
-/* .img__left {
-    position: absolute;
-    top: 0;
-    left: 20px;
+    padding-left: 50px;
     z-index: -1;
 }
-
-.img__right {
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    z-index: -2;
-} */
 
 .intro-slider__title {
+    position: absolute;
+    top: 350px;
+    left: 230px;
     font-size: 60px;
     line-height: 60px;
     color: #fff;
     max-width: 700px;
-    padding-top: 395px;
-    margin: 0 auto;
     margin-bottom: 26px;
 }
 
+.intro-slider__title + a {
+    position: absolute;
+    top: 550px;
+    left: 430px;
+}
 
 .slick-dots {
     display: flex;
     list-style: none;
     position: absolute;
-    bottom: 10px;
+    bottom: 32%;
     left: -40px;
 }
 
@@ -323,6 +354,7 @@ button {
     border: 2px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+    outline: none;
 }
 
 .slick-dots .slick-active button {
@@ -336,18 +368,6 @@ button {
 .slick-dots button:active {
     background-color: rgba(255, 255, 255);
 }
-
-/* #btn-1:checked ~ .container #slide1,
-#btn-2:checked ~ .container #slide2,
-#btn-3:checked ~ .container #slide3 {
-    display: block;
-}
-
-#btn-1:checked ~ .container label[for="btn-1"],
-#btn-2:checked ~ .container label[for="btn-2"],
-#btn-3:checked ~ .container label[for="btn-3"] {
-    background-color: #fff;
-} */
 
 .info-cards {
     display: flex;
@@ -531,12 +551,12 @@ button {
 
 .card-subscription__pattern {
     background: #f8f7f4 url('/img/post_pattern.png');
-    padding: 10px 8px;
+    padding: 6px 8px;
     border-radius: 15px;
 }
 
 .card-subscription {
-    padding: 30px 20px;
+    padding: 34px 20px;
     background-color: #f8f7f4;
 }
 
@@ -564,16 +584,16 @@ button {
 }
 
 .map {
-    position: relative;
+    padding: 60px 50px;
     width: 100%;
     height: 430px;
     background: url('/img/map.jpg');
+    background-size: cover;
 }
 
 .map-info {
-    position: absolute;
-    top: 63px;
-    right: 52px;
+    max-width: 300px;
+    margin-left: auto;
     background-color: #fff;
     border-radius: 15px;
     padding: 30px 25px;
