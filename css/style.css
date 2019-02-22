@@ -226,7 +226,6 @@ button {
 
 .modal-login {
     position: absolute;
-    display: none;
     width: 280px;
     height: 220px;
     top: 35px;

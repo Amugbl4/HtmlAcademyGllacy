@@ -27,12 +27,12 @@
             </nav>
             <div class="user-block">
                 <ul class="user-block__list">
-                    <li><a class="search" href="#" title="Поиск"></a></li>
-                    <div class="modal modal-search">
+                    <li><a class="search js-open-modal" href="#" title="Поиск" data-target-id="headerSearch"></a></li>
+                    <div class="modal modal-search" id="headerSearch">
                         <input type="text" placeholder="Что ищем?">
                     </div>
-                    <li><a class="login" href="#">Вход</a></li>
-                    <div class="modal modal-login">
+                    <li><a class="login js-open-modal" href="#" data-target-id="headerLogin">Вход</a></li>
+                    <div class="modal modal-login" id="headerLogin">
                         <form action="#" method="POST">
                             <input type="email" name="email" placeholder="Электронная почта">
                             <input type="password" name="password" placeholder="Пароль">
