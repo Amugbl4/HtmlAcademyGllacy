@@ -48,12 +48,15 @@ $(document).ready(function () {
       console.log('link with target ' + target + ' clicked');
       $target.toggleClass('modal--show');
 
-      
-      const container = $($target);
-    
-      if (!container.is(el.target) && container.has(el.target).lenght === 0) {
-        $target.toggleClass
-      }
+
+      $(document).click(function (e) {
+        const modal = $('.modal--show');
+        console.log(modal);
+        if (!modal.is(e.target) 
+        && modal.has(e.target).length === 0) {
+          modal.removeClass('modal--show');
+        }
+      })
     });
     // var targetLink = el.getAttribute('data-target-id');
     // var curTargetLink = document.getElementById(targetLink);
