@@ -68,7 +68,7 @@
             <h1 class="catalog__title">Сливочное мороженое</h1>
             <div class="catalog__filters">
                 <form action="#" method="POST">
-                    <div class="filter__sorting">
+                    <div class="filter-sorting">
                         <label for="filter-sorting">Сортировать:</label>
                         <select name="filter-sorting" id="filter-sorting">
                             <option value="По популярности">По популярности</option>
@@ -81,10 +81,93 @@
                         <label class="max-price">-
                             <input type="text" name="max-price" value="500">руб.
                         </label>
-                        <div class="range-controls"></div>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toogle-min"></div>
+                            <div class="range-toogle range-toggle-max"></div>
+                        </div>
+                        <div class="filter-fat-content">
+                            <label for="fat-content">Жирность:</label>
+                            <input type="radio" value="0">0%
+                            <input type="radio" value="10" checked>10%
+                            <input type="radio" value="10-30">до 30%
+                            <input type="radio" value=">30">выше 30%
+                        </div>
+                        <div class="filter-fillers">
+                            <label for="fillers"></label>
+                            <input type="checkbox" value="chocolate" checked>шоколадные
+                            <input type="checkbox" value="
+                            sugar powders" checked>сахарные
+                            присыпки
+                            <input type="checkbox" value="fruits">фрукты
+                            <input type="checkbox" value="syrups">сиропы
+                            <input type="checkbox" value="jams">джемы
+                        </div>
+                        <button type="submit" class="filters-submit">Применить</button>
                     </div>
                 </form>
             </div>
+            <div class="item-catalog">
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/img/1.jpg" alt="">
+                        <div class="item__price">315&#8381<span>/кг</span></div>
+                        <a class="item__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/img/1.jpg" alt="">
+                        <div class="item__price">315&#8381<span>/кг</span></div>
+                        <a class="item__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/img/1.jpg" alt="">
+                        <div class="item__price">315&#8381<span>/кг</span></div>
+                        <a class="item__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/img/1.jpg" alt="">
+                        <div class="item__price">315&#8381<span>/кг</span></div>
+                        <a class="item__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/img/1.jpg" alt="">
+                        <div class="item__price">315&#8381<span>/кг</span></div>
+                        <a class="item__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="/img/1.jpg" alt="">
+                        <div class="item__price">315&#8381<span>/кг</span></div>
+                        <a class="item__name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-catalog__pagination">
+                <nav>
+                    <button class="pagination__arrow-back">Назад</button>
+                    <div class="pagination__pages">
+                        <li class="pages--active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </div>
+                    <button class="pagination__arrow-forward">Вперед</button>
+                </nav>
+            </div>
+        </div>
+
         </div>
     </main>
 
