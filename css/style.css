@@ -11,6 +11,7 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     background-color:  rgb(132, 157, 143);
+    margin: 0;
 }
 
 button {
@@ -97,7 +98,7 @@ button {
     margin-right: 10px;
     color: #fff;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
 }
 
 .main-navigation li a:hover {
@@ -462,7 +463,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -24px;
-    margin-bottom: 40px;
 }
 
 .item {
@@ -507,6 +507,7 @@ button {
 
 .item__name {
     display: inline-block;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 22px;
     color: #fff;
