@@ -734,3 +734,39 @@ button {
 .footer-copyright__text a {
     color: #fff;
 }
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.breadcrumbs a {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-right: 30px;
+}
+
+.breadcrumbs a::after {
+    position: absolute; 
+    display: inline;
+    margin-left: 10px;
+    content: "»";
+    color: #fff;
+
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.catalog__title {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
