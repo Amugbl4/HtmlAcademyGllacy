@@ -134,3 +134,15 @@ $(document).ready(function () {
   // });
 });
 
+// $(document).ready(function () {
+//   ymaps.ready(() => {
+//     const mapContainer = document.getElementById('mymap');
+//     const MAP = ymaps.Map(mapContainer, {
+
+//     });
+//   });
+// });
+
+
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.

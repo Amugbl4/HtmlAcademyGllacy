@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gllacy Shop</title>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1ddd2b4b77f2c679a19b6e4e7b7e250035eefaf0a2df7144fb52427a5c79b98&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;scroll=true;id=mymap"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -215,9 +215,14 @@
         </div>
         </div>
     </main>
-    <div id="mymap"></div>
     <div class="map">
-        <div class="container">
+        <div class="yandex-map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa1ddd2b4b77f2c679a19b6e4e7b7e250035eefaf0a2df7144fb52427a5c79b98&amp;width=100%&amp;height=430&amp;lang=ru_RU&amp;scroll=true;">
+            </script>
+        </div>
+        <div class="container is-relative">
+
             <div class="map-info">
                 <p class="map-info__text">Адрес главного офиса<br>
                     и офлайн магазина:
@@ -230,7 +235,6 @@
                 </p>
                 <a class="btn" href="#">Форма обратной связи</a>
             </div>
-            <!-- <div id="yandex-map"></div> -->
         </div>
     </div>
     <footer class="main-footer">
@@ -273,10 +277,29 @@
             </div>
         </div>
     </footer>
-    
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=50097728-8448-4b70-bbb7-7da1c1a0fbcc" type="text/javascript"></script> -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+
+        function init() {
+            // Создание карты.    
+            var myMap = new ymaps.Map("mymap", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.76, 37.64],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 7
+            });
+        }
+    </script>
 </body>
 
 </html>
